@@ -1,11 +1,5 @@
-document.getElementById("tigran").addEventListener("click", function() {
-    alert("Você clicou no botão Tigran");
-});
-
-document.getElementById("marcos").addEventListener("click", function() {
-    alert("Você clicou no botão Marcos");
-});
-
-document.getElementById("john").addEventListener("click", function() {
-    alert("Você clicou no botão John");
-});
+document.querySelectorAll('.name').forEach(name => {
+            name.addEventListener('click', () => {
+                name.classList.toggle('enlarged');
+            });
+        });
