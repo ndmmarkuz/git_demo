@@ -1,45 +1,47 @@
 body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            border: 2px solid #333;
-            padding: 20px;
-            background: linear-gradient(135deg, #f06, #4a90e2);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            border-radius: 15px;
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-            width: 80%;
-        }
-        .name-container {
-            margin: 0 10px;
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .name {
-            font-size: 24px;
-            color: #fff;
-            margin: 10px 0;
-            cursor: pointer;
-            transition: font-size 0.3s ease, color 0.3s ease, background-color 0.3s ease;
-            padding: 10px 20px;
-            border: 2px solid #fff;
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-        .name:hover {
-            background-color: rgba(255, 255, 255, 0.4);
-        }
-        .name.enlarged {
-            font-size: 36px;
-            color: #ffeb3b;
-        }
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    transition: box-shadow 0.3s ease; /* Added smooth shadow transition */
+}
+
+#tigran {
+    background: linear-gradient(45deg, purple, blue); /* Added gradient background */
+    animation: gradientAnimation 3s infinite; /* Added animation for gradient */
+}
+
+#marcos {
+    background: linear-gradient(45deg, green, yellow); /* Added gradient background */
+    animation: gradientAnimation 3s infinite; /* Added animation for gradient */
+}
+
+#john {
+    background: linear-gradient(45deg, red, orange); /* Added gradient background */
+    animation: gradientAnimation 3s infinite; /* Added animation for gradient */
+}
+
+button:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow on hover */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
