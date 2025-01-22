@@ -1,26 +1,29 @@
 body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    margin-top: 50px;
-}
-
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    color: white;
-}
-
-#tigran {
-    background-color: blue;
-}
-
-#marcos {
-    background-color: green;
-}
-
-#john {
-    background-color: red;
-}
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            border: 2px solid #333;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .name-box {
+            border: 1px solid #333;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #e0e0e0;
+        }
+        .name {
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+            transition: font-size 0.3s ease;
+        }
+        .name.enlarged {
+            font-size: 36px;
+        }
