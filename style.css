@@ -11,16 +11,37 @@ button {
     cursor: pointer;
     border: none;
     color: white;
+    transition: box-shadow 0.3s ease; /* Added smooth shadow transition */
 }
 
 #tigran {
-    background-color: blue;
+    background: linear-gradient(45deg, purple, blue); /* Added gradient background */
+    animation: gradientAnimation 3s infinite; /* Added animation for gradient */
 }
 
 #marcos {
-    background-color: green;
+    background: linear-gradient(45deg, green, yellow); /* Added gradient background */
+    animation: gradientAnimation 3s infinite; /* Added animation for gradient */
 }
 
 #john {
-    background-color: red;
+    background: linear-gradient(45deg, red, orange); /* Added gradient background */
+    animation: gradientAnimation 3s infinite; /* Added animation for gradient */
 }
+
+button:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow on hover */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
