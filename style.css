@@ -5,25 +5,41 @@ body {
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
         }
         .container {
             border: 2px solid #333;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #f06, #4a90e2);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
         }
-        .name-box {
-            border: 1px solid #333;
-            padding: 10px;
-            margin: 10px 0;
-            background-color: #e0e0e0;
+        .name-container {
+            margin: 0 10px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .name {
             font-size: 24px;
-            color: #333;
+            color: #fff;
+            margin: 10px 0;
             cursor: pointer;
-            transition: font-size 0.3s ease;
+            transition: font-size 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .name:hover {
+            background-color: rgba(255, 255, 255, 0.4);
         }
         .name.enlarged {
             font-size: 36px;
+            color: #ffeb3b;
         }
